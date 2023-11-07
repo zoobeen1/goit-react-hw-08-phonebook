@@ -1,10 +1,9 @@
 import { Box } from '.';
-import PropTypes from 'prop-types';
 export const Button = ({ children, ...props }) => {
   return (
     <Box
       as="button"
-      mt={2}
+      // mt={3}
       bg="button_color"
       color="light_text"
       border="normal"
@@ -16,7 +15,4 @@ export const Button = ({ children, ...props }) => {
       {children}
     </Box>
   );
-};
-Button.propTypes = {
-  children: PropTypes.node.isRequired,
 };

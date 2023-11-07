@@ -1,10 +1,12 @@
-import { Section } from 'components/common';
+import { Section, Container } from 'components/common';
 import { InputForm } from './InputForm';
 
 export function PhoneBook() {
   return (
-    <Section title="Phonebook">
-      <InputForm />
-    </Section>
+    <Container>
+      <Section title="Phonebook">
+        <InputForm />
+      </Section>
+    </Container>
   );
 }

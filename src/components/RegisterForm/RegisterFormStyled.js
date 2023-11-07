@@ -1,0 +1,23 @@
+import styled from 'styled-components';
+import { Field, Form } from 'formik';
+export const Input = styled(Field)`
+  display: block;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+`;
+export const FormStyled = styled(Form)`
+  margin-top: 30px;
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+`;
+export const ErrorText = styled.div`
+  color: red;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+`;

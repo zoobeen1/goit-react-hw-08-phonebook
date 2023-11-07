@@ -5,9 +5,9 @@ import { FormError } from './FormError';
 import * as yup from 'yup';
 //Redux
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts } from 'redux/selectors';
+import { selectContacts } from 'redux/contacts-selectors';
 //Redux-actions
-import { addContact } from 'redux/operations';
+import { addContact } from 'redux/contacts-operations';
 
 export const InputForm = () => {
   const dispatch = useDispatch();
@@ -69,7 +69,9 @@ export const InputForm = () => {
         />
         <FormError name="number" />
 
-        <Button type="submit">Add contact</Button>
+        <Button type="submit" mt={3}>
+          Add contact
+        </Button>
       </FormStyled>
     </Formik>
   );
