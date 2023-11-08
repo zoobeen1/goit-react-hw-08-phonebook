@@ -10,7 +10,7 @@ export const Input = styled(Field)`
   width: 100%;
 `;
 export const FormStyled = styled(Form)`
-  width: 400px;
+  width: 100%;
   margin-top: 30px;
   margin-right: auto;
   margin-left: auto;

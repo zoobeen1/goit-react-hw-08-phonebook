@@ -11,7 +11,7 @@ export const Input = styled(Field)`
 `;
 export const FormStyled = styled(Form)`
   margin-top: 30px;
-  width: 400px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 `;
