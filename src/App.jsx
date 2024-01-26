@@ -1,13 +1,17 @@
 import { ContactsPage } from 'pages/ContactsPage';
 import { GlobalStyle } from 'GlobalStyle';
-import { useEffect } from 'react';
+import { useEffect, lazy } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { HomePage } from 'pages/HomePage';
-import { Login } from 'pages/Login';
-import { Register } from 'pages/Register';
 import { refreshSession } from 'redux/auth-operations';
 import { selectIsLoggedIn } from 'redux/auth-selectors';
+import { Login } from 'pages/Login';
+import { Register } from 'pages/Register';
+
+//Lazy imports
+// const Login = lazy(() => import('pages/Login'));
+// const Register = lazy(() => import('pages/Register'));
 
 export function App() {
   const isLoggedIn = useSelector(selectIsLoggedIn);
@@ -18,7 +22,6 @@ export function App() {
   return (
     <>
       <GlobalStyle />
-
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route

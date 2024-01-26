@@ -5,7 +5,7 @@ export const HomePage = () => {
   return (
     <>
       <AppBar />
-      <h1>Phone Book</h1>
+      <h1>Phone Book - Home Page</h1>
     </>
   );
 };
